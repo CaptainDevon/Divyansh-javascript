@@ -5,9 +5,9 @@ for(let i=0;i<arr.length;i++)
 }
 
 //for of loop
-for(let val of arr)
+for(let ans of arr)
 {
-    console.log(arr);
+    console.log(ans);
 }
 
 //for in loop 
