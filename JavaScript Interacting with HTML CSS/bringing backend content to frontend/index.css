@@ -1,0 +1,29 @@
+body
+{
+    background: black;
+    color:white;
+}
+
+.names
+{
+    position:relative;
+    margin-top: -200px;
+    max-height: 200px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.card
+{
+    position:relative;
+    display:flex;
+    margin-top:100px;
+    margin-left:200px;
+    justify-content:center;
+    place-items:center;
+    background:dodgerblue;
+    height:200px;
+    width:200px;
+    color:white;
+    border-radius:30px;
+}
