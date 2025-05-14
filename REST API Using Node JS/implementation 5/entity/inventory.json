@@ -1,0 +1,37 @@
+{
+  "fruits": {
+    "citrus": [],
+    "berries": [],
+    "tropical": []
+  },
+  "vegetables": {
+    "leafy": [],
+    "root": [],
+    "cruciferous": []
+  },
+  "dairy": {
+    "milk": [],
+    "cheese": [],
+    "yogurt": []
+  },
+  "meat": {
+    "poultry": [],
+    "beef": [],
+    "pork": []
+  },
+  "snacks": {
+    "chips": [],
+    "cookies": [],
+    "candies": []
+  },
+  "sweet": {
+    "chocolate": [],
+    "candies": [],
+    "cakes": []
+  },
+  "frozen": {
+    "meals": [],
+    "desserts": [],
+    "snacks": []
+  }
+}
