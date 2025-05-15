@@ -1,6 +1,19 @@
 {
   "fruits": {
-    "citrus": [],
+    "citrus": [{ "itemCode": "FR001", "itemName": "Apple", "quantity": 80, "cost": 40 },
+  { "itemCode": "FR002", "itemName": "Banana", "quantity": 100, "cost": 15 },
+  { "itemCode": "FR003", "itemName": "Orange", "quantity": 70, "cost": 30 },
+  { "itemCode": "FR004", "itemName": "Grapes", "quantity": 60, "cost": 45 },
+  { "itemCode": "FR005", "itemName": "Pineapple", "quantity": 40, "cost": 50 },
+  { "itemCode": "FR006", "itemName": "Watermelon", "quantity": 20, "cost": 60 },
+  { "itemCode": "FR007", "itemName": "Mango", "quantity": 50, "cost": 50 },
+  { "itemCode": "FR008", "itemName": "Papaya", "quantity": 45, "cost": 25 },
+  { "itemCode": "FR009", "itemName": "Kiwi", "quantity": 30, "cost": 70 },
+  { "itemCode": "FR010", "itemName": "Pomegranate", "quantity": 50, "cost": 60 },
+  { "itemCode": "FR011", "itemName": "Guava", "quantity": 55, "cost": 30 },
+  { "itemCode": "FR012", "itemName": "Lychee", "quantity": 65, "cost": 40 },
+  { "itemCode": "FR013", "itemName": "Pear", "quantity": 40, "cost": 35 },
+  { "itemCode": "FR014", "itemName": "Plum", "quantity": 30, "cost": 30 }],
     "berries": [],
     "tropical": []
   },

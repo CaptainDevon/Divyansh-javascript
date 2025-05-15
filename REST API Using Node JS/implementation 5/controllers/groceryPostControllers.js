@@ -8,6 +8,14 @@ const inventoryFilePath = path.join(__dirname, '../entity/inventory.json');
 
 
 
+export const addCategory=async(req,res)=>{
+
+};
+
+export const addSubcategory=async(req,res)=>{
+
+};
+
 
 export const addItems = async (req, res) => {
   try {
