@@ -1,21 +1,54 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
-import inventory from '../entity/inventory.json' assert { type: "json" };
+import fs from "fs/promises";
+import path from "path";
+import { fileURLToPath } from "url";
+import inventory from "../entity/inventory.json" assert { type: "json" };
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const inventoryFilePath = path.join(__dirname, '../entity/inventory.json');
+const inventoryFilePath = path.join(__dirname, "../entity/inventory.json");
 
-
-
-export const addCategory=async(req,res)=>{
-
+export const addCategory = async (req, res) => {
+  try {
+    const { category } = req.params;
+    if (inventory[category]) {
+      return res.json({ message: "The Category already exists" });
+    }
+    inventory[category] = [];
+    await fs.writeFile(
+      inventoryFilePath,
+      JSON.stringify(inventory, null, 2),
+      "utf8"
+    );
+    return res.json({
+      message: `The new Category ${category} has been added in the inventory`,
+    });
+  } catch (e) {
+    res.json({ message: e.message });
+  }
 };
 
-export const addSubcategory=async(req,res)=>{
-
+export const addSubcategory = async (req, res) => {
+  try {
+    const { category, subcategory } = req.params;
+    if (!inventory[category]) {
+      return res.json({ message: "The category doesnt exists" });
+    }
+    if (inventory[category][subcategory]) {
+      return res.json({ message: "The Subcategory already exists" });
+    }
+    inventory[category][subcategory] = [];
+    await fs.writeFile(
+      inventoryFilePath,
+      JSON.stringify(inventory, null, 2),
+      "utf8"
+    );
+    return res.json({
+      message: `The new Subcategory ${subcategory} has been added in ${category}`,
+    });
+  } catch (e) {
+    res.json({ message: e.message });
+  }
 };
-
 
 export const addItems = async (req, res) => {
   try {
@@ -27,26 +60,28 @@ export const addItems = async (req, res) => {
     }
 
     if (!inventory[category][subcategory]) {
-      return res.json({ message: `Subcategory "${subcategory}" not found in category "${category}".` });
+      return res.json({
+        message: `Subcategory "${subcategory}" not found in category "${category}".`,
+      });
     }
 
-    if(Array.isArray(item))
-    {
-        inventory[category][subcategory].push(...item);
+    if (Array.isArray(item)) {
+      inventory[category][subcategory].push(...item);
+    } else {
+      inventory[category][subcategory].push(item);
     }
-    else
-    {
-        inventory[category][subcategory].push(item);
-    }
-    
 
-    await fs.writeFile(inventoryFilePath, JSON.stringify(inventory, null, 2), 'utf8');
+    await fs.writeFile(
+      inventoryFilePath,
+      JSON.stringify(inventory, null, 2),
+      "utf8"
+    );
 
     res.json({
       message: "Item added to the subcategory",
       category: category,
       subcategory: subcategory,
-      item: item
+      item: item,
     });
   } catch (e) {
     res.json({ message: e.message });
