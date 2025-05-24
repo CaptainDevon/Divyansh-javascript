@@ -145,3 +145,60 @@ export const billing = async (req, res) => {
     res.json({ message: e.message });
   }
 };
+
+export const returnBilling = async (req, res) => {
+  try {
+    const data = req.body;
+
+    const itemCodes = data.map(i => i.itemCode);
+    const quantity = data.map(j => j.quantity);
+
+    let sum = 0;
+    const itemDetailsList = [];
+
+    for (let k = 0; k < itemCodes.length; k++) {
+      let q = quantity[k];
+      let code = itemCodes[k];
+
+      let itemFound = false;
+
+      for (let category in inventory) {
+        for (let subcategory in inventory[category]) {
+          const items = inventory[category][subcategory];
+
+          const item = items.find(i => i.itemCode === code);
+          if (item) {
+            if (item.quantity < q) {
+              return res.json({ message: `Insufficient quantity for item code ${code}` });
+            }
+
+            item.quantity += q;
+
+            const itemDetail = { ...item, quantity: q };
+            itemDetailsList.push(itemDetail);
+            sum += item.cost * q;
+
+            itemFound = true;
+            break;
+          }
+        }
+        if (itemFound) break;
+      }
+
+      if (!itemFound) {
+        return res.json({ message: `The item with code ${code} doesn't exist` });
+      }
+    }
+
+    await fs.writeFile(inventoryFilePath, JSON.stringify(inventory, null, 2));
+
+    res.json({
+      "billing Information": itemDetailsList,
+      "Amount to be Refund": sum
+    });
+
+  } catch (e) {
+    res.json({ message: e.message });
+  }
+};
+
