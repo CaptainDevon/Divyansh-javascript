@@ -86,37 +86,557 @@
         "cost": 30
       }
     ],
-    "berries": [],
-    "tropical": []
+    "berries": [
+      {
+        "itemCode": "FR015",
+        "itemName": "Strawberry",
+        "quantity": 100,
+        "cost": 150
+      },
+      {
+        "itemCode": "FR016",
+        "itemName": "Blueberry",
+        "quantity": 70,
+        "cost": 200
+      },
+      {
+        "itemCode": "FR017",
+        "itemName": "Raspberry",
+        "quantity": 60,
+        "cost": 180
+      },
+      {
+        "itemCode": "FR018",
+        "itemName": "Blackberry",
+        "quantity": 50,
+        "cost": 160
+      }
+    ],
+    "tropical": [
+      {
+        "itemCode": "FR019",
+        "itemName": "Banana (Cavendish)",
+        "quantity": 120,
+        "cost": 20
+      },
+      {
+        "itemCode": "FR020",
+        "itemName": "Pineapple (Queen)",
+        "quantity": 35,
+        "cost": 55
+      },
+      {
+        "itemCode": "FR021",
+        "itemName": "Papaya (Red Lady)",
+        "quantity": 40,
+        "cost": 30
+      },
+      {
+        "itemCode": "FR022",
+        "itemName": "Mango (Alphonso)",
+        "quantity": 60,
+        "cost": 100
+      },
+      {
+        "itemCode": "FR023",
+        "itemName": "Coconut (Tender)",
+        "quantity": 80,
+        "cost": 40
+      }
+    ]
   },
   "vegetables": {
-    "leafy": [],
-    "root": [],
-    "cruciferous": []
+    "leafy": [
+      {
+        "itemCode": "VE001",
+        "itemName": "Spinach",
+        "quantity": 50,
+        "cost": 20
+      },
+      {
+        "itemCode": "VE002",
+        "itemName": "Lettuce (Iceberg)",
+        "quantity": 40,
+        "cost": 30
+      },
+      {
+        "itemCode": "VE003",
+        "itemName": "Kale",
+        "quantity": 30,
+        "cost": 40
+      },
+      {
+        "itemCode": "VE004",
+        "itemName": "Fenugreek Leaves (Methi)",
+        "quantity": 45,
+        "cost": 25
+      }
+    ],
+    "root": [
+      {
+        "itemCode": "VE005",
+        "itemName": "Carrot",
+        "quantity": 100,
+        "cost": 15
+      },
+      {
+        "itemCode": "VE006",
+        "itemName": "Beetroot",
+        "quantity": 80,
+        "cost": 20
+      },
+      {
+        "itemCode": "VE007",
+        "itemName": "Radish",
+        "quantity": 60,
+        "cost": 12
+      },
+      {
+        "itemCode": "VE008",
+        "itemName": "Turnip",
+        "quantity": 40,
+        "cost": 18
+      }
+    ],
+    "cruciferous": [
+      {
+        "itemCode": "VE009",
+        "itemName": "Cauliflower",
+        "quantity": 50,
+        "cost": 25
+      },
+      {
+        "itemCode": "VE010",
+        "itemName": "Broccoli",
+        "quantity": 35,
+        "cost": 50
+      },
+      {
+        "itemCode": "VE011",
+        "itemName": "Cabbage",
+        "quantity": 45,
+        "cost": 20
+      },
+      {
+        "itemCode": "VE012",
+        "itemName": "Brussels Sprouts",
+        "quantity": 20,
+        "cost": 60
+      }
+    ]
   },
   "dairy": {
-    "milk": [],
-    "cheese": [],
-    "yogurt": []
+    "milk": [
+      {
+        "itemCode": "DA001",
+        "itemName": "Amul Full Cream Milk (1L)",
+        "quantity": 200,
+        "cost": 60
+      },
+      {
+        "itemCode": "DA002",
+        "itemName": "Amul Toned Milk (1L)",
+        "quantity": 180,
+        "cost": 50
+      },
+      {
+        "itemCode": "DA003",
+        "itemName": "Britannia Full Cream Milk (1L)",
+        "quantity": 150,
+        "cost": 65
+      }
+    ],
+    "cheese": [
+      {
+        "itemCode": "DA004",
+        "itemName": "Amul Cheese Slices (200g)",
+        "quantity": 120,
+        "cost": 90
+      },
+      {
+        "itemCode": "DA005",
+        "itemName": "Britannia Cheese Spread (150g)",
+        "quantity": 100,
+        "cost": 85
+      },
+      {
+        "itemCode": "DA006",
+        "itemName": "Parmesan Cheese (Imported, 100g)",
+        "quantity": 50,
+        "cost": 180
+      }
+    ],
+    "yogurt": [
+      {
+        "itemCode": "DA007",
+        "itemName": "Amul Masti Dahi (500g)",
+        "quantity": 200,
+        "cost": 45
+      },
+      {
+        "itemCode": "DA008",
+        "itemName": "Epigamia Greek Yogurt (100g)",
+        "quantity": 150,
+        "cost": 80
+      },
+      {
+        "itemCode": "DA009",
+        "itemName": "Mother Dairy Curd (500g)",
+        "quantity": 180,
+        "cost": 40
+      }
+    ]
   },
   "meat": {
-    "poultry": [],
-    "beef": [],
-    "pork": []
+    "poultry": [
+      {
+        "itemCode": "ME001",
+        "itemName": "Broiler Chicken Whole (1kg)",
+        "quantity": 100,
+        "cost": 180
+      },
+      {
+        "itemCode": "ME002",
+        "itemName": "Chicken Breast Boneless (500g)",
+        "quantity": 80,
+        "cost": 220
+      },
+      {
+        "itemCode": "ME003",
+        "itemName": "Chicken Drumsticks (500g)",
+        "quantity": 90,
+        "cost": 150
+      }
+    ],
+    "beef": [
+      {
+        "itemCode": "ME004",
+        "itemName": "Beef Mince (500g)",
+        "quantity": 70,
+        "cost": 250
+      },
+      {
+        "itemCode": "ME005",
+        "itemName": "Beef Steak (1kg)",
+        "quantity": 50,
+        "cost": 500
+      }
+    ],
+    "pork": [
+      {
+        "itemCode": "ME006",
+        "itemName": "Pork Shoulder (1kg)",
+        "quantity": 40,
+        "cost": 400
+      },
+      {
+        "itemCode": "ME007",
+        "itemName": "Pork Belly (500g)",
+        "quantity": 60,
+        "cost": 350
+      }
+    ]
   },
   "snacks": {
-    "chips": [],
-    "cookies": [],
-    "candies": []
+    "chips": [
+      {
+        "itemCode": "SN001",
+        "itemName": "Lay's Indian Magic Masala",
+        "quantity": 100,
+        "cost": 20
+      },
+      {
+        "itemCode": "SN002",
+        "itemName": "Lay's Classic Salted",
+        "quantity": 100,
+        "cost": 20
+      },
+      {
+        "itemCode": "SN003",
+        "itemName": "Lay's American Style Cream & Onion",
+        "quantity": 100,
+        "cost": 20
+      },
+      {
+        "itemCode": "SN004",
+        "itemName": "Lay's Spanish Tomato Tango",
+        "quantity": 100,
+        "cost": 20
+      },
+      {
+        "itemCode": "SN005",
+        "itemName": "Lay's West Indies' Hot 'n' Sweet Chilli",
+        "quantity": 100,
+        "cost": 20
+      },
+      {
+        "itemCode": "SN006",
+        "itemName": "Lay's Chile Limon",
+        "quantity": 100,
+        "cost": 20
+      },
+      {
+        "itemCode": "SN007",
+        "itemName": "Lay's Maxx Sizzling Barbeque",
+        "quantity": 100,
+        "cost": 25
+      },
+      {
+        "itemCode": "SN008",
+        "itemName": "Lay's Maxx Macho Chilli",
+        "quantity": 100,
+        "cost": 25
+      },
+      {
+        "itemCode": "SN009",
+        "itemName": "Lay's Gourmet Lime & Cracked Pepper",
+        "quantity": 100,
+        "cost": 30
+      },
+      {
+        "itemCode": "SN010",
+        "itemName": "Lay's Gourmet Thai Sweet Chilli",
+        "quantity": 100,
+        "cost": 30
+      },
+      {
+        "itemCode": "SN011",
+        "itemName": "Lay's Gourmet Vintage Cheese & Paprika",
+        "quantity": 100,
+        "cost": 30
+      },
+      {
+        "itemCode": "SN012",
+        "itemName": "Pringles Original",
+        "quantity": 100,
+        "cost": 40
+      },
+      {
+        "itemCode": "SN013",
+        "itemName": "Pringles Sour Cream & Onion",
+        "quantity": 100,
+        "cost": 40
+      },
+      {
+        "itemCode": "SN014",
+        "itemName": "Pringles Cheddar Cheese",
+        "quantity": 100,
+        "cost": 40
+      },
+      {
+        "itemCode": "SN015",
+        "itemName": "Pringles BBQ",
+        "quantity": 100,
+        "cost": 40
+      },
+      {
+        "itemCode": "SN016",
+        "itemName": "Pringles Hot & Spicy",
+        "quantity": 100,
+        "cost": 40
+      }
+    ],
+    "cookies": [
+      {
+        "itemCode": "SN017",
+        "itemName": "Oreo Original Chocolate Creme",
+        "quantity": 100,
+        "cost": 30
+      },
+      {
+        "itemCode": "SN018",
+        "itemName": "Oreo Golden Vanilla Creme",
+        "quantity": 100,
+        "cost": 30
+      },
+      {
+        "itemCode": "SN019",
+        "itemName": "Britannia Treat Dark Fantasy Choco Fills",
+        "quantity": 100,
+        "cost": 35
+      },
+      {
+        "itemCode": "SN020",
+        "itemName": "Britannia NutriChoice Digestive",
+        "quantity": 100,
+        "cost": 25
+      }
+    ]
   },
-  "sweet": {
-    "chocolate": [],
-    "candies": [],
-    "cakes": []
+  "desserts": {
+    "cakes": [
+      {
+        "itemCode": "DE001",
+        "itemName": "Chocolate Fudge Cake",
+        "quantity": 30,
+        "cost": 500
+      },
+      {
+        "itemCode": "DE002",
+        "itemName": "Vanilla Sponge Cake",
+        "quantity": 25,
+        "cost": 450
+      },
+      {
+        "itemCode": "DE003",
+        "itemName": "Red Velvet Cake",
+        "quantity": 20,
+        "cost": 600
+      },
+      {
+        "itemCode": "DE004",
+        "itemName": "Black Forest Cake",
+        "quantity": 15,
+        "cost": 650
+      }
+    ],
+    "pastries": [
+      {
+        "itemCode": "DE005",
+        "itemName": "Chocolate Éclair",
+        "quantity": 40,
+        "cost": 150
+      },
+      {
+        "itemCode": "DE006",
+        "itemName": "Strawberry Danish",
+        "quantity": 50,
+        "cost": 120
+      },
+      {
+        "itemCode": "DE007",
+        "itemName": "Cream Puff",
+        "quantity": 35,
+        "cost": 130
+      },
+      {
+        "itemCode": "DE008",
+        "itemName": "Lemon Tart",
+        "quantity": 30,
+        "cost": 140
+      }
+    ],
+    "iceCreams": [
+      {
+        "itemCode": "DE009",
+        "itemName": "Vanilla Ice Cream (500ml)",
+        "quantity": 100,
+        "cost": 150
+      },
+      {
+        "itemCode": "DE010",
+        "itemName": "Chocolate Ice Cream (500ml)",
+        "quantity": 100,
+        "cost": 160
+      },
+      {
+        "itemCode": "DE011",
+        "itemName": "Strawberry Ice Cream (500ml)",
+        "quantity": 100,
+        "cost": 160
+      },
+      {
+        "itemCode": "DE012",
+        "itemName": "Mango Ice Cream (500ml)",
+        "quantity": 100,
+        "cost": 170
+      }
+    ],
+    "puddings": [
+      {
+        "itemCode": "DE013",
+        "itemName": "Chocolate Pudding",
+        "quantity": 50,
+        "cost": 120
+      },
+      {
+        "itemCode": "DE014",
+        "itemName": "Vanilla Custard",
+        "quantity": 60,
+        "cost": 110
+      },
+      {
+        "itemCode": "DE015",
+        "itemName": "Rice Pudding",
+        "quantity": 40,
+        "cost": 130
+      }
+    ]
   },
   "frozen": {
-    "meals": [],
-    "desserts": [],
-    "snacks": []
+    "vegetables": [
+      {
+        "itemCode": "FZ001",
+        "itemName": "Frozen Peas (1kg)",
+        "quantity": 50,
+        "cost": 120
+      },
+      {
+        "itemCode": "FZ002",
+        "itemName": "Frozen Mixed Vegetables (1kg)",
+        "quantity": 40,
+        "cost": 140
+      },
+      {
+        "itemCode": "FZ003",
+        "itemName": "Frozen Corn Kernels (1kg)",
+        "quantity": 45,
+        "cost": 130
+      }
+    ],
+    "seafood": [
+      {
+        "itemCode": "FZ004",
+        "itemName": "Frozen Shrimp (500g)",
+        "quantity": 30,
+        "cost": 350
+      },
+      {
+        "itemCode": "FZ005",
+        "itemName": "Frozen Fish Fillets (1kg)",
+        "quantity": 25,
+        "cost": 500
+      },
+      {
+        "itemCode": "FZ006",
+        "itemName": "Frozen Calamari Rings (500g)",
+        "quantity": 20,
+        "cost": 400
+      }
+    ],
+    "readyMeals": [
+      {
+        "itemCode": "FZ007",
+        "itemName": "Frozen Veggie Pizza",
+        "quantity": 30,
+        "cost": 250
+      },
+      {
+        "itemCode": "FZ008",
+        "itemName": "Frozen Chicken Nuggets (500g)",
+        "quantity": 50,
+        "cost": 300
+      },
+      {
+        "itemCode": "FZ009",
+        "itemName": "Frozen Lasagna (1kg)",
+        "quantity": 20,
+        "cost": 450
+      }
+    ],
+    "frozenDesserts": [
+      {
+        "itemCode": "FZ010",
+        "itemName": "Frozen Yogurt (500ml)",
+        "quantity": 40,
+        "cost": 180
+      },
+      {
+        "itemCode": "FZ011",
+        "itemName": "Frozen Ice Cream Sandwich",
+        "quantity": 50,
+        "cost": 150
+      }
+    ]
   }
 }

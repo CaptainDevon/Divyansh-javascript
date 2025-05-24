@@ -91,6 +91,3 @@ export const getItemDetails=(req,res)=>{
     res.json({"message":e.message});
   }
 };
-
-  
-
