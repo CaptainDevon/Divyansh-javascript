@@ -1,0 +1,154 @@
+body
+{
+    justify-content: center;
+    place-items: center;
+    display:flex;
+    flex-direction:column;
+    background:black;
+    color:white;
+}
+
+.box
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;  
+    height: 800px;
+    width: 300px;
+}
+
+input {
+  display:flex;
+  position:relative;
+  color: white;
+  border: 2px solid #8707ff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  max-width: 190px;
+}
+
+input:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+
+
+button
+{
+    position:relative;
+    align-items: center;
+    margin-top:40px;
+    margin-left:20%;
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:active,
+button:hover 
+{
+  outline: 0;
+}
+
+button span 
+{
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+button:hover span 
+{
+  background: none;
+}
+
+button:active 
+{
+  transform: scale(0.9);
+}
+
+
+
+.output 
+{
+  width: 300px;
+  height: 200px;
+  margin-top:30px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.output h2 
+{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+}
+
+.output::before 
+{
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg 
+{
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.output::after 
+{
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}  
+
+
+
+
+

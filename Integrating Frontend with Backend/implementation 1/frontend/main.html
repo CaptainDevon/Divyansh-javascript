@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information using Rest</title>
+    <link rel='stylesheet' href="main.css">
+</head>
+<body>
+    <div class="box">
+        <form class='entry-field' onsubmit="takingInfo(event)">
+            <input required placeholder="First Name" id="firstName">
+            <input placeholder="Last Name" id="lastName">
+            <input required placeholder="Gender" id="gender">
+            <input required placeholder="Age" id="age">
+            <button type="submit">Submit</button>
+        </form>
+
+
+        <div class="output" id="output">
+            
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
