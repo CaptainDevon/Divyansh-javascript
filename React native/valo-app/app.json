@@ -17,9 +17,14 @@
       "adaptiveIcon": {
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.devonnative.valoapp"
     },
-    "web": {
+    "web": {},
+    "extra": {
+      "eas": {
+        "projectId": "58440e64-8387-4b24-8437-d9d8a762a7c1"
+      }
     }
   }
 }
