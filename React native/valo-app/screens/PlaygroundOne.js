@@ -14,7 +14,8 @@ const PlaygroundOne = ({ navigation }) => {
   return (
     <ImageBackground
       source={valorantWallpaper}
-      style={{ flex: 1, resizeMode: "cover" }}
+      style={{ flex: 1}}
+      resizeMode= "cover" 
     >
       <View style={styles.container}>
         <Image source={valorantIcon} style={styles.valoIcon} />
