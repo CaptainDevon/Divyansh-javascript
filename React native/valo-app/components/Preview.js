@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   bgImage: {
     height: width * 0.55, // proportional image height
     width: "100%",
-    resizeMode: "contain",
+    resizeMode: "cover",
     marginBottom: 10,
   },
   roleImage: {

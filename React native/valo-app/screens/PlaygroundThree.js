@@ -105,9 +105,9 @@ const styles = StyleSheet.create({
     paddingLeft: width * 0.05,
   },
   container: {
-    marginTop: height * 0.05,
+    marginTop: height * 0.40,
     height: height * 0.4,
-    width: width * 0.9,
+    width: width * 0.85,
     backgroundColor: "rgba(0, 0, 0, 0.89)",
     borderRadius: 20,
   },
