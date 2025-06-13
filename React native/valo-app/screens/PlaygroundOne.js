@@ -33,8 +33,7 @@ const PlaygroundOne = ({ navigation }) => {
             justifyContent: "center",
             color: "white",
             fontSize: 35,
-            fontWeight: "bold",
-            fontFamily: "sans-serif",
+            fontWeight: "bold"
           }}
         >
           Go Exploring
