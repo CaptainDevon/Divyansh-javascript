@@ -6,71 +6,69 @@ import {
   StyleSheet,
   View,
   Text,
+  Dimensions,
+  SafeAreaView,
 } from "react-native";
 import valorantWallpaper from "../assets/screen-one-wallpaper.jpg";
 import valorantIcon from "../assets/Valorant-Logo.png";
+
+const { width, height } = Dimensions.get("window");
 
 const PlaygroundOne = ({ navigation }) => {
   return (
     <ImageBackground
       source={valorantWallpaper}
-      style={{ flex: 1}}
-      resizeMode= "cover" 
+      style={styles.background}
+      resizeMode="cover"
     >
-      <View style={styles.container}>
+      <SafeAreaView style={styles.safeArea}>
         <Image source={valorantIcon} style={styles.valoIcon} />
         <StatusBar style="auto" />
-      </View>
-      <Pressable
-        onPress={() => navigation.navigate("Second")}
-        style={({ pressed }) => [
-          styles.buttonItem,
-          pressed && styles.pressedStyle,
-        ]}
-      >
-        <Text
-          style={{
-            alignItems: "center",
-            justifyContent: "center",
-            color: "white",
-            fontSize: 35,
-            fontWeight: "bold"
-          }}
+
+        <Pressable
+          onPress={() => navigation.navigate("Second")}
+          style={({ pressed }) => [
+            styles.buttonItem,
+            pressed && styles.pressedStyle,
+          ]}
         >
-          Go Exploring
-        </Text>
-      </Pressable>
-      <View></View>
+          <Text style={styles.buttonText}>Go Exploring</Text>
+        </Pressable>
+      </SafeAreaView>
     </ImageBackground>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
-    position: "relative",
-    justifyContent: "center",
+  background: {
+    flex: 1,
+  },
+  safeArea: {
+    flex: 1,
     alignItems: "center",
-    marginTop: 12,
+    justifyContent: "space-between",
+    paddingTop: height * 0.1,
+    paddingBottom: height * 0.1,
   },
   valoIcon: {
-    position: "relative",
-    height: 200,
-    width: 200,
+    height: height * 0.25,
+    width: width * 0.5,
     resizeMode: "contain",
   },
   buttonItem: {
-    position: "relative",
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 500,
-    marginLeft: "20%",
     backgroundColor: "#ff2828",
-    width: "60%",
-    height: 80,
+    width: width * 0.6,
+    height: height * 0.08,
     borderRadius: 20,
-    borderStyle: "solid",
     borderWidth: 5,
     borderColor: "#cd3535",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  buttonText: {
+    color: "white",
+    fontSize: width * 0.07,
+    fontWeight: "bold",
   },
   pressedStyle: {
     opacity: 0.8,
