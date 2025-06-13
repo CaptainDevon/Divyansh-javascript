@@ -19,6 +19,7 @@ const PlaygroundTwo = ({ navigation }) => {
     <ImageBackground
       source={require("../assets/screen-two-wallpaper.jpg")}
       style={styles.background}
+      resizeMode= "cover"
     >
       <SafeAreaView style={styles.container}>
         <View style={styles.header}>
@@ -56,8 +57,7 @@ const PlaygroundTwo = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   background: {
-    flex: 1,
-    resizeMode: "cover",
+    flex: 1
   },
   container: {
     flex: 1,
