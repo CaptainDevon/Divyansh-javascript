@@ -10,7 +10,7 @@ import Footer from './Hero/Footer.jsx';
 const Hero = () => {
 
   return (
-    <div className="flex flex-grow flex-col w-0 mr-1 h-11/12 bg-zinc-900 text-white rounded-md overflow-auto custom-scrollbar gap-3">
+    <div className="flex flex-grow flex-col w-0 mr-1 h-97 bg-zinc-900 text-white rounded-md overflow-auto custom-scrollbar gap-3">
       <SongSection/>
       <ArtistSection/>
       <AlbumSection/>

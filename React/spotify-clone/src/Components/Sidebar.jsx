@@ -5,7 +5,7 @@ import { libraryValues } from '../Constants/Values'
 import { sidebarFooterVals } from '../Constants/Values'
 const Sidebar = () => {
   return (
-    <div className="flex flex-col ml-1 h-11/12 resize-x overflow-auto min-w-[12.5rem] z-50 max-w-72 bg-[#121212] rounded-md">
+    <div className="flex flex-col ml-1 h-97 resize-x overflow-auto min-w-[12.5rem] z-50 max-w-72 bg-[#121212] rounded-md">
       <Headline/>
       <div className="flex flex-col mt-5 items-center overflow-auto custom-scrollbar w-full h-50 gap-2">
         {libraryValues.map((playlist, index) => {
