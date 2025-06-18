@@ -9,7 +9,7 @@ import browse from '../assets/browseCard.jpg'
 export const navbarLinks = [
   { name: "Premium", href: "/premium" },
   { name: "Support", href: "/support" },
-  { name: "Download", href: "/download" },
+  { name: "Download", href: "/downloads" },
 ];
 
 export const libraryValues = [

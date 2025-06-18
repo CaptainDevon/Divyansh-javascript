@@ -6,6 +6,7 @@ import Sidebar from './Components/Sidebar'
 import Hero from './Components/Hero'
 import Layout from './Layout';
 import BrowsePage from './Components/Pages/BrowsePage';
+import AppInstallPage from './Components/Pages/AppInstallPage';
 const App = () => {
   return (
     <Router>
@@ -13,10 +14,11 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Hero />} /> 
           <Route path="search" element={<Hero><BrowsePage /></Hero>} />
+          <Route path="download" element={<Hero><AppInstallPage/></Hero>}/>
         </Route>
         <Route path="/premium" element={<p>this it the premium page</p>} />
         <Route path="/support" element={<p>this it the support page</p>} />
-        <Route path="/download" element={<p>this it the download page</p>} />
+        <Route path="/downloads" element={<p>this it the download page</p>} />
       </Routes>
     </Router>
   )

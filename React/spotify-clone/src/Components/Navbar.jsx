@@ -33,10 +33,10 @@ const Navbar = () => {
       </div>
 
       <div className='flex flex-row justify-center items-center ml-2 mt-[-10px] gap-5 '>
-        <a href="#" className="flex gap-[4px] justify-center items-center text-neutral-400 text-[11px] font-semibold hover:text-white hover:scale-105 transition ease delay-20">
-          <i class='bx bx-down-arrow-alt'></i>
+        <Link to="/download" href="#" className="flex gap-[4px] justify-center items-center text-neutral-400 text-[11px] font-semibold hover:text-white hover:scale-105 transition ease delay-20">
+          <i class='bx bx-down-arrow-alt border-neutral-400 border-2 rounded-full hover:border-white hover:scale-105 transition ease delay-20'></i>
           Install App
-        </a>
+        </Link>
         <a href="#" className="flex justify-center items-center text-neutral-400 text-[11px] font-semibold hover:text-white hover:scale-105 transition ease delay-20">
           Sign up
         </a>
