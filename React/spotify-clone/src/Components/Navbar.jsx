@@ -28,7 +28,7 @@ const Navbar = () => {
 
       <div className="flex gap-2 ml-50 px-5 border-r-2 h-2/3 border-white">
         {navbarLinks.map((links,index)=>{
-        return <a className="flex text-[11px]  text-neutral-400 font-bold tracking-tight hover:text-white hover:scale-105 transition ease delay-20" key={index} href={links.href}>{links.name}</a>
+        return <Link to={links.href} className="flex text-[11px]  text-neutral-400 font-bold tracking-tight hover:text-white hover:scale-105 transition ease delay-20" key={index}>{links.name}</Link>
         })}
       </div>
 

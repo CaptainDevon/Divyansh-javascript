@@ -9,7 +9,7 @@ import Footer from './Hero/Footer.jsx';
 import BrowsePage from "./Pages/BrowsePage.jsx";
 
 
-const Hero = () => {
+const Hero = ({children}) => {
 
   const location=useLocation();
   const isDefaultPage=location.pathname==='/';
@@ -24,9 +24,7 @@ const Hero = () => {
       <FeaturesSection/>  
       <CountryBest/></>):
       (<>
-      <Routes>
-        <Route path="/search" element={<BrowsePage/>}/>
-      </Routes>
+      {children}
       </>)}
 
       <Footer/>

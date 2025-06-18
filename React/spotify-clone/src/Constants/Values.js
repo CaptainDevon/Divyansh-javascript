@@ -7,9 +7,9 @@ import country from '../assets/Country.jpg'
 import browse from '../assets/browseCard.jpg'
 
 export const navbarLinks = [
-  { name: "Premium", href: "#" },
-  { name: "Support", href: "#" },
-  { name: "Download", href: "#" },
+  { name: "Premium", href: "/premium" },
+  { name: "Support", href: "/support" },
+  { name: "Download", href: "/download" },
 ];
 
 export const libraryValues = [
